@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.12.1" orientation="orthogonal" renderorder="right-down" width="4" height="3" tilewidth="512" tileheight="512" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" source="Fungal - TileSet.tsx"/>
+ <imagelayer id="2" name="Calque d'Images 1">
+  <image source="Room8.png" width="2048" height="1365"/>
+ </imagelayer>
+ <objectgroup id="4" name="collision">
+   <object id="2" x="8" y="1128" width="2036" height="408"/>
+  </objectgroup>
+ <layer id="1" name="Calque de Tuiles 1" width="4" height="3">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+2,2,2,2
+</data>
+ </layer>
+</map>

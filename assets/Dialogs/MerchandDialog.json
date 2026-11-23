@@ -1,0 +1,149 @@
+{
+  "inkVersion": 21,
+  "root": [
+    [
+      {
+        "->": "marchand"
+      },
+      [
+        "done",
+        {
+          "#f": 5,
+          "#n": "g-0"
+        }
+      ],
+      null
+    ],
+    "done",
+    {
+      "marchand": [
+        [
+          "^Marchand: Ah, un voyageur ! Ça fait des jours que personne ne passe par ici...",
+          "\n",
+          "^Tu cherches quelque chose en particulier ?",
+          "\n",
+          "ev",
+          "str",
+          "^Vous avez des potions ?",
+          "/str",
+          "/ev",
+          {
+            "*": ".^.c-0",
+            "flg": 20
+          },
+          "ev",
+          "str",
+          "^Où mène cette route ?",
+          "/str",
+          "/ev",
+          {
+            "*": ".^.c-1",
+            "flg": 20
+          },
+          "ev",
+          "str",
+          "^Au revoir.",
+          "/str",
+          "/ev",
+          {
+            "*": ".^.c-2",
+            "flg": 20
+          },
+          {
+            "c-0": [
+              "\n",
+              "^Marchand: Des potions, oui ! Mais mes stocks sont bas depuis que les routes sont infestées de bandits.",
+              "\n",
+              "^J'en ai encore deux. Elles sont à toi si tu m'aides à retrouver ma cargaison volée.",
+              "\n",
+              [
+                "ev",
+                "str",
+                "^Accepter la mission",
+                "/str",
+                "/ev",
+                {
+                  "*": ".^.c-0",
+                  "flg": 20
+                },
+                "ev",
+                "str",
+                "^Refuser",
+                "/str",
+                "/ev",
+                {
+                  "*": ".^.c-1",
+                  "flg": 20
+                },
+                {
+                  "c-0": [
+                    "\n",
+                    "^Marchand: Excellent ! Les bandits campent au nord, près de la vieille tour.",
+                    "\n",
+                    "^Reviens avec ma cargaison et les potions sont à toi. Bonne chance.",
+                    "\n",
+                    {
+                      "->": "fin_marchand"
+                    },
+                    {
+                      "#f": 5
+                    }
+                  ],
+                  "c-1": [
+                    "\n",
+                    "^Marchand: Je comprends... La route est dangereuse. Bonne continuation, voyageur.",
+                    "\n",
+                    {
+                      "->": "fin_marchand"
+                    },
+                    {
+                      "#f": 5
+                    }
+                  ]
+                }
+              ],
+              {
+                "#f": 5
+              }
+            ],
+            "c-1": [
+              "\n",
+              "^Marchand: Au nord, le village de Valdris. Mais méfie-toi...",
+              "\n",
+              "^On dit que des créatures rôdent la nuit depuis que le vieux phare est éteint.",
+              "\n",
+              {
+                "->": "fin_marchand"
+              },
+              {
+                "#f": 5
+              }
+            ],
+            "c-2": [
+              "\n",
+              "^Marchand: Prends soin de toi, ami. Les temps sont durs.",
+              "\n",
+              {
+                "->": "fin_marchand"
+              },
+              {
+                "#f": 5
+              }
+            ]
+          }
+        ],
+        {
+          "#f": 1
+        }
+      ],
+      "fin_marchand": [
+        "end",
+        {
+          "#f": 1
+        }
+      ],
+      "#f": 1
+    }
+  ],
+  "listDefs": {}
+}

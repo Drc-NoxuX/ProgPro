@@ -1,0 +1,22 @@
+package com.ProgPro.GameEvent;
+
+public enum GameEvent {
+    PLAYER_HIT,
+    PLAYER_DIED,
+    ENEMY_HIT,
+    ENEMY_DIED,
+    ATTACK_MISSED,
+    ITEM_PICKED,
+    COMBAT_STARTED,
+    ENEMY_MOVED,
+    PLAYER_TURN,
+    PLAYER_REVIVE,
+    PLAYER_WON,
+    PLAYER_LOST,
+    DIALOG_STARTED,
+    DIALOG_FINISHED,
+    SHOP_OPENED,
+    SHOP_CLOSED,
+    PAUSE_STARTED,
+    PAUSE_FINISHED
+}
