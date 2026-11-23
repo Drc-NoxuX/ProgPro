@@ -225,7 +225,7 @@ This is a resume of what I learned and what I would have changed with more time:
 
 ## Credits
 
--**Development**: [Théodora Dragan Chopart](https://github.com/Drc-NoxuX)
+- **Development**: [Théodora Dragan Chopart](https://github.com/Drc-NoxuX)
 - **Tilesets**: [Mossy Cavern](https://maaot.itch.io/mossy-cavern) and [Fungal Grotto](https://maaot.itch.io/fungal-grotto) by Maaot
 - **Libraries**: [libGDX](https://libgdx.com) (with Box2D and scene2d), [blade-ink](https://github.com/bladecoder/blade-ink) to run [Ink](https://www.inklestudios.com/ink/) dialogs
 - **Project template**: generated with [gdx-liftoff](https://github.com/libgdx/gdx-liftoff)
